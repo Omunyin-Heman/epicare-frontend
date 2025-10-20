@@ -25,7 +25,7 @@ function Programs() {
           and <span className="font-semibold text-purple-600">enhancing food and agricultural practices</span>.  
           <br /><br />
           Our programs are designed to <span className="text-pink-500 font-semibold">uplift the vulnerable</span>,  
-          inspire innovation, and drive long-term transformation where it matters most—within our communities.
+          inspire innovation, and drive long-term transformation where it matters most within our communities.
         </p>
 
         {/* Buttons Grid */}

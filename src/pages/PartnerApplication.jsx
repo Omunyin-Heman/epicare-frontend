@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import API_BASE_URL from "../config"; // ✅ Import your centralized API URL
+import { API_BASE_URL } from '/src/config.jsx'; // ✅ Import your centralized API URL
+
+const API_URL =
+  window.location.hostname === "localhost"
+    ? import.meta.env.VITE_LOCAL_API_BASE_URL
+    : import.meta.env.VITE_API_BASE_URL;
+
 
 function PartnerApplication() {
   const [formData, setFormData] = useState({

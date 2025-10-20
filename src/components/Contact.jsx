@@ -3,6 +3,11 @@ import { motion } from "framer-motion";
 import axios from "axios";
 import { API_BASE_URL } from "../config";
 
+const API_URL =
+  window.location.hostname === "localhost"
+    ? import.meta.env.VITE_LOCAL_API_BASE_URL
+    : import.meta.env.VITE_API_BASE_URL;
+
 function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
@@ -159,9 +164,9 @@ function Contact() {
               href="mailto:omunyinheheman@gmail.com"
               className="text-blue-600 hover:underline"
             >
-              omunyinheheman@gmail.com
+              epicareinternational1@infor.co.ke
             </a>{" "}
-            | ☎️ +254 708 698 260
+            | ☎️ +254 706 267253
           </p>
         </div>
       </div>
